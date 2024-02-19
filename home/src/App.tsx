@@ -4,6 +4,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 import "./index.scss";
+import { HomeContent } from "./HomeContent";
 
 const App = () => (
   <div className="text-3xl mx-auto max-w-6xl">
@@ -16,6 +17,7 @@ const App = () => (
         animals.
       </p>
     </div>
+    <HomeContent />
     <Footer />
   </div>
 );
