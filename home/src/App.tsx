@@ -3,11 +3,12 @@ import ReactDOM from "react-dom/client";
 import Header from "./Header";
 import Footer from "./Footer";
 
+import "remixicon/fonts/remixicon.css";
 import "./index.scss";
 import { HomeContent } from "./HomeContent";
 
 const App = () => (
-  <div className="text-3xl mx-auto max-w-6xl">
+  <div className="max-w-6xl mx-auto text-3xl">
     <Header />
     <div className="p-5">
       <h1 className="text-5xl font-bold">Welcome to Cats World Home Page</h1>

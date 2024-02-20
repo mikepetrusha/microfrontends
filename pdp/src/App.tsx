@@ -4,9 +4,9 @@ import ErrorBoundary from "./ErrorBoundary";
 import Header from "home/Header";
 import Footer from "home/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
 import "./index.scss";
-import { PDPContent } from "./PDPContent";
+import PDPContent from "./PDPContent";
+import "remixicon/fonts/remixicon.css";
 
 const App = () => (
   <Router>
@@ -26,6 +26,7 @@ const App = () => (
     </div>
   </Router>
 );
+
 const rootElement = document.getElementById("app");
 if (!rootElement) throw new Error("Failed to find the root element");
 

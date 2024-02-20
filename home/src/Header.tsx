@@ -1,11 +1,25 @@
 import React from "react";
+// import { Link } from "react-router-dom";
 
-const Header = () => {
+import MiniCart from "cart/MiniCart";
+import Login from "cart/Login";
+
+export default function Header() {
   return (
-    <header className="p-5 bg-blue-500 text-white text-3xl font-bold">
-      Cats World
-    </header>
+    <div className="p-5 text-3xl font-bold text-white bg-blue-500">
+      <div className="flex">
+        <div className="flex flex-grow">
+          {/* <Link to="/">Fidget Spinner World</Link>
+          <div className="mx-5">|</div>
+          <Link id="cart" to="/cart">
+            Cart
+          </Link> */}
+        </div>
+        <div className="relative flex-end">
+          <MiniCart />
+          <Login />
+        </div>
+      </div>
+    </div>
   );
-};
-
-export default Header;
+}

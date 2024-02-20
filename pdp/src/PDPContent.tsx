@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
-import { getProductById, currency } from "home/products";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-export const PDPContent = () => {
+import { getProductById, currency } from "home/products";
+
+export default function PDPContent() {
   const { id } = useParams();
-  const [product, setProduct] = useState(null);
+  const [product, setProduct] = useState<any>(null);
 
   useEffect(() => {
     if (id) {
@@ -33,4 +34,4 @@ export const PDPContent = () => {
       </div>
     </div>
   );
-};
+}
