@@ -49,9 +49,11 @@ module.exports = (_, argv) => ({
         cart: "cart@http://localhost:3002/remoteEntry.js",
       },
       exposes: {
-        "./Header": "./src/Header",
-        "./Footer": "./src/Footer",
+        "./Header": "./src/Header.tsx",
+        "./Footer": "./src/Footer.tsx",
         "./products": "./src/products.ts",
+        "./HomeContent": "./src/HomeContent.tsx",
+        "./MainLayout": "./src/MainLayout.tsx",
       },
       shared: {
         ...deps,

@@ -1,6 +1,5 @@
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
-import ErrorBoundary from "./ErrorBoundary";
 import Header from "home/Header";
 import Footer from "home/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -11,9 +10,7 @@ import "remixicon/fonts/remixicon.css";
 const App = () => (
   <Router>
     <div className="max-w-6xl mx-auto text-3xl">
-      <ErrorBoundary>
-        <Header />
-      </ErrorBoundary>
+      <Header />
       <div className="p-5">
         <h1 className="text-5xl font-bold">Welcome to Cats World PDP Page</h1>
       </div>
